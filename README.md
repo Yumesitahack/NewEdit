@@ -1,8 +1,13 @@
-# React + Tailwind
+# 🌸 Portafolio de Yume Monasterio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules. One top of the standard Vite setup, [tailwindcss](https://tailwindcss.com/) is installed and ready to be used in React components.
+¡Bienvenido a mi portafolio personal! Este proyecto fue creado con **React** y **Tailwind CSS**, y está diseñado para mostrar mi perfil y aprendizaje de una forma moderna y responsiva...
 
-Additional references:
-* [Getting started with Vite](https://vitejs.dev/guide/)
-* [Tailwind documentation](https://tailwindcss.com/docs/installation)
+## ✨ Características
+
+- ⚛️ Construido con **React**
+- 🎨 Estilizado con **Tailwind CSS**
+- 🖼️ Imagen de perfil
+- 🔘 Botones de navegación suaves
+- 💻 Secciones personalizables: Sobre mí, Aprendizaje, GitHub
+
 
