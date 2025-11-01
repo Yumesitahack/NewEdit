@@ -4,6 +4,7 @@ import SobreMi from "./components/SobreMi";
 import Aprendizaje from "./components/Aprendizaje";
 import GithubOrg from "./components/GithubOrg";
 import Footer from "./components/Footer";
+import Contacto from "./components/Contacto";
 
 const App: React.FC = () => {
   return (
@@ -26,6 +27,7 @@ const App: React.FC = () => {
         <SobreMi />
         <Aprendizaje />
         <GithubOrg />
+        <Contacto />
       </main>
       <Footer />
     </div>

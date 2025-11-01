@@ -11,7 +11,7 @@ const Header: React.FC = () => {
   return (
     <header className="py-16 px-8 relative">
       <div className="flex flex-col md:flex-row items-end justify-between gap-8">
-       
+        {/* Perfil a la izquierda, más abajo */}
         <div className="flex flex-col items-start md:w-1/2 mt-12">
           <div className="w-28 h-28 mb-4 rounded-full overflow-hidden border-4 border-white shadow-lg">
             <img
@@ -26,7 +26,7 @@ const Header: React.FC = () => {
           <p className="text-lg text-white">Ing de sistemas ✨</p>
         </div>
 
-        
+        {/* Imágenes decorativas por encima de los botones */}
         <div className="flex flex-col items-center md:w-1/2">
           <div className="flex justify-center items-center gap-8 mb-6">
             <img
@@ -41,7 +41,7 @@ const Header: React.FC = () => {
             />
           </div>
 
-         
+          {/* Botones debajo de las imágenes */}
           <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-end">
             <button
               onClick={() => scrollToSection("sobre-mi")}
@@ -60,6 +60,12 @@ const Header: React.FC = () => {
               className="bg-pink-300 hover:bg-pink-400 text-white py-2 px-4 rounded-full"
             >
               GitHub Org
+            </button>
+            <button
+              onClick={() => scrollToSection("contacto")}
+              className="bg-pink-300 hover:bg-pink-400 text-white py-2 px-4 rounded-full"
+            >
+              Contacto
             </button>
           </div>
         </div>
