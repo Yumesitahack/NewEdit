@@ -9,5 +9,4 @@
 - 🖼️ Imagen de perfil
 - 🔘 Botones de navegación suaves
 - 💻 Secciones personalizables: Sobre mí, Aprendizaje, GitHub
-
-
+- 📲 Opcion para contacto mediante formsubmit
