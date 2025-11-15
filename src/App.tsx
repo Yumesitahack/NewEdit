@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./components/Header";
 import SobreMi from "./components/SobreMi";
 import Aprendizaje from "./components/Aprendizaje";
 import GithubOrg from "./components/GithubOrg";
 import Footer from "./components/Footer";
 import Contacto from "./components/Contacto";
+import BlogModal from "./components/BlogModal";
 
 const App: React.FC = () => {
+  const [showBlog, setShowBlog] = useState(false);
+
   return (
     <div className="min-h-screen animated-bg text-white relative overflow-hidden">
       {/* Ilustraciones decorativas */}
@@ -22,7 +25,7 @@ const App: React.FC = () => {
       />
 
       {/* Contenido */}
-      <Header />
+      <Header onOpenBlog={() => setShowBlog(true)} />
       <main>
         <SobreMi />
         <Aprendizaje />
@@ -30,6 +33,9 @@ const App: React.FC = () => {
         <Contacto />
       </main>
       <Footer />
+
+      {/* Hobbie/creaciones */}
+      <BlogModal show={showBlog} onClose={() => setShowBlog(false)} />
     </div>
   );
 };

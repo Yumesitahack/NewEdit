@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Modelos variados de pulseras (Denarios y letras)",
+    "image": "/imagenes/imagen1.jpg",
+    "description": "Estos son distintos modelos de pulseras hechas a mano"
+  },
+  {
+    "id": 2,
+    "title": "Pulseras y Rosario",
+    "image": "/imagenes/imagen2.jpg",
+    "description": "5 distintos colores de pulseras con balines y un Rosario ."
+  },
+  {
+    "id": 3,
+    "title": "Denarios sencillos",
+    "image": "/imagenes/imagen3.jpg",
+    "description": "Denarios sencillos en colores rojo y negro ."
+  },
+  {
+    "id": 4,
+    "title": "Denarios con balines",
+    "image": "/imagenes/imagen4.jpg",
+    "description": "3 modelos de denarios con balines (pepitas en dorado) en 3 colores elegantes."
+  },
+  {
+    "id": 5,
+    "title": "Modelos de pulsera tejida con letras",
+    "image": "/imagenes/imagen5.jpg",
+    "description": "6 modelos de pulseras con letras unicolor y combinado ademas de hilito rojo con corazon."
+  },
+  {
+    "id": 6,
+    "title": "Denarios sencillos y con balines",
+    "image": "/imagenes/imagen6.jpg",
+    "description": "Dos denarios sencillos en colores rojo y rosa. Dos denarios con bailnes en color negro."
+  },
+  {
+    "id": 7,
+    "title": "Denarios con balines y sencillo",
+    "image": "/imagenes/imagen7.jpg",
+    "description": "2 denarios con balines en colores rojo y rosa. 1 denario en color negro."
+  },
+  {
+    "id": 8,
+    "title": "Denarios de colores",
+    "image": "/imagenes/imagen8.jpg",
+    "description": "3 Denarios variados, 2 con balines en color rosa y negro y un denario sencillo en color rojo."
+  }
+]
