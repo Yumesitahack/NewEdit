@@ -2,25 +2,6 @@ import React, { useState } from "react";
 
 const Contacto: React.FC = () => {
   const [mostrarFormulario, setMostrarFormulario] = useState(false);
-  const [enviado, setEnviado] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    const form = e.currentTarget;
-    const data = new FormData(form);
-
-    await fetch("https://formsubmit.co/yume19monasterio@gmail.com", {
-      method: "POST",
-      body: data,
-      headers: {
-        Accept: "application/json",
-      },
-    });
-
-    setEnviado(true);
-    form.reset();
-  };
 
   return (
     <section id="contacto" className="py-20 px-4 text-white text-center">
@@ -34,11 +15,19 @@ const Contacto: React.FC = () => {
 
       {mostrarFormulario && (
         <form
-          onSubmit={handleSubmit}
+          action="https://formsubmit.co/yume19monasterio@gmail.com"
+          method="POST"
           className="max-w-md mx-auto bg-white text-black p-6 rounded-lg shadow-lg"
         >
+          {/* Campos ocultos */}
           <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://new-edit-zeta.vercel.app/gracias.html"
+          />
 
+          {/* Nombre */}
           <div className="mb-4 text-left">
             <label className="block mb-2 font-semibold">
               Nombre y Apellido
@@ -51,6 +40,7 @@ const Contacto: React.FC = () => {
             />
           </div>
 
+          {/* Correo */}
           <div className="mb-4 text-left">
             <label className="block mb-2 font-semibold">Correo</label>
             <input
@@ -61,6 +51,7 @@ const Contacto: React.FC = () => {
             />
           </div>
 
+          {/* Mensaje */}
           <div className="mb-4 text-left">
             <label className="block mb-2 font-semibold">Mensaje</label>
             <textarea
@@ -70,18 +61,13 @@ const Contacto: React.FC = () => {
             ></textarea>
           </div>
 
+          {/* Botón */}
           <button
             type="submit"
             className="bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-full"
           >
             Enviar
           </button>
-
-          {enviado && (
-            <p className="mt-4 text-green-600 font-semibold">
-              ¡Mensaje enviado con éxito!
-            </p>
-          )}
         </form>
       )}
     </section>
