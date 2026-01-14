@@ -21,17 +21,18 @@ const Contacto: React.FC = () => {
         >
           {/* Campos ocultos */}
           <input type="hidden" name="_captcha" value="false" />
+          {/* Redirección a tu página de agradecimiento */}
           <input
             type="hidden"
             name="_next"
             value="https://new-edit-zeta.vercel.app/gracias.html"
           />
+          {/* Opcional: asunto del correo */}
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde el portafolio" />
 
           {/* Nombre */}
           <div className="mb-4 text-left">
-            <label className="block mb-2 font-semibold">
-              Nombre y Apellido
-            </label>
+            <label className="block mb-2 font-semibold">Nombre y Apellido</label>
             <input
               type="text"
               name="name"
